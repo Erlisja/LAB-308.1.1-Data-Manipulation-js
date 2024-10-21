@@ -43,3 +43,25 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+//       *** Practice ***
+
+  //Check if all numbers are divisible by 5. Cache the result in a variable.
+ const isDivisibleBy5 = n1 % 5 === 0 && n2 % 5 === 0 && n3 % 5 === 0 && n4 % 5 === 0;
+console.log(isDivisibleBy5); 
+
+// Check if the first number is larger than the last. Cache the result in a variable.
+const isFirstLarger = n1 > n4;
+console.log(isFirstLarger);
+
+//Accomplish the following arithmetic chain:
+//  1. Subtract the first number from the second number.
+const result1 = n2 - n1;
+console.log(result1);
+
+//  2. Multiply the result by the third number.
+const result2 = result1 * n3;
+console.log(result2);
+//  3.Find the remainder of dividing the result by the fourth number.
+const result3 = result2 % n4;
+console.log(result3);
